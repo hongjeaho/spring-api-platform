@@ -1,6 +1,7 @@
 
-
 dependencies {
+    api(project(":common-base"))
+    api(project(":datasource-base"))
 
+    api "$boot:spring-boot-starter-web"
 }
-
