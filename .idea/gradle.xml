@@ -9,6 +9,7 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/api/sample" />
             <option value="$PROJECT_DIR$/common/base" />
             <option value="$PROJECT_DIR$/common/web" />
             <option value="$PROJECT_DIR$/datasource/base" />
