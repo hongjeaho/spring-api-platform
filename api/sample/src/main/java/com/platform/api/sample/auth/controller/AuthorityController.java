@@ -2,8 +2,6 @@ package com.platform.api.sample.auth.controller;
 
 
 import com.platform.api.sample.auth.service.AuthorityService;
-import com.platform.common.web.annotations.CommonApiResponses;
-import com.platform.common.web.dto.BaseApiResponse;
 import com.platform.common.web.util.JwtTokenUtil;
 import com.platform.datasource.base.auth.AuthRequest;
 import com.platform.datasource.base.auth.AuthUser;
@@ -32,13 +30,12 @@ public class AuthorityController {
 
     @Operation(summary = "로그인 처리", description = "로그인 처리 후 인증된 정보를 내려준다.")
     @PostMapping("/login")
-    @CommonApiResponses
-    public ResponseEntity<BaseApiResponse<AuthUser>> login(
+    public ResponseEntity<AuthUser> login(
             @RequestBody AuthRequest authRequest
     ) {
         final var user = authorityService.login(authRequest);
         return ResponseEntity.ok()
                 .header(HttpHeaders.AUTHORIZATION, JwtTokenUtil.makeAuthToken(user, jwtExpirationPeriod))
-                .body(BaseApiResponse.payload(user));
+                .body(user);
     }
 }
