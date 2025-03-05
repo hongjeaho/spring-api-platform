@@ -4,4 +4,8 @@ dependencies {
     api(project(":datasource-base"))
 
     api "$boot:spring-boot-starter-web"
+    api "$boot:spring-boot-starter-aop"
+
+
+    testImplementation testFixtures(project(':common-base'))
 }
