@@ -6,6 +6,7 @@ dependencies {
     api "$boot:spring-boot-starter-web"
     api "$boot:spring-boot-starter-aop"
 
+    testImplementation 'org.springframework.security:spring-security-test'
 
     testImplementation testFixtures(project(':common-base'))
 }

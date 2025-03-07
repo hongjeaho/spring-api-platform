@@ -1,4 +1,4 @@
-package com.platform.common.web.aspect.controller;
+package com.platform.common.web.controller;
 
 import com.platform.common.web.annotation.ApplyMasking;
 import com.platform.common.web.annotation.MaskingPattern;
@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class MaskingResponse {
+public class TestMaskingResponse {
     @ApplyMasking(pattern = MaskingPattern.NAME)
     private String name;;
 

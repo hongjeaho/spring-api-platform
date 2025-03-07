@@ -1,7 +1,7 @@
 package com.platform.api.sample.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.platform.common.web.auth.filter.JWTCheckFilter;
+import com.platform.common.web.config.filter.JWTCheckFilter;
 import com.platform.common.web.dto.BaseApiResponse;
 import com.platform.datasource.base.repository.authority.AuthorityRepository;
 import jakarta.servlet.http.HttpServletResponse;

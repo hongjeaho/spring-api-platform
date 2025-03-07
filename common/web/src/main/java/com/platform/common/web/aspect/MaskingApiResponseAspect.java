@@ -1,6 +1,6 @@
 package com.platform.common.web.aspect;
 
-import com.platform.common.web.dto.AbstractDto;
+import com.platform.common.web.dto.AbstractDTO;
 import com.platform.common.web.annotation.ApplyMasking;
 import com.platform.common.web.annotation.MaskingPattern;
 import lombok.extern.slf4j.Slf4j;
@@ -58,7 +58,7 @@ public class MaskingApiResponseAspect {
         while (currentClass != Object.class) {
             Field[] allFields = currentClass.getDeclaredFields();
             for (Field field : allFields) {
-                if (AbstractDto.class.isAssignableFrom(field.getType())) {
+                if (AbstractDTO.class.isAssignableFrom(field.getType())) {
                     field.setAccessible(true);
                     try {
                         maskData(field.get(data));

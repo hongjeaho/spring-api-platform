@@ -1,4 +1,4 @@
-package com.platform.common.web.auth.filter;
+package com.platform.common.web.config.filter;
 
 import com.platform.common.web.auth.VerifyResult;
 import com.platform.common.web.util.JwtTokenUtil;
