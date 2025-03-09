@@ -1,4 +1,4 @@
-create table `user
+create table user
 (
     seq          BIGINT                             NOT NULL AUTO_INCREMENT COMMENT '사용자 일련번호',
     email        VARCHAR(100)                       NOT NULL COMMENT '사용자 이메일',

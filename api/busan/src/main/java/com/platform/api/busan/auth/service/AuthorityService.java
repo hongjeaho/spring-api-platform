@@ -15,6 +15,11 @@ import org.springframework.stereotype.Service;
 public class AuthorityService {
     private final AuthenticationManager authenticationManager;
 
+    /**
+     * 로그인 인증 여부를 검사하고 사용자 정보를 return 한다.
+     * @param authRequest 로그인 정보
+     * @return 사용자 정보
+     */
     public AuthUser login(AuthRequest authRequest) {
         final var authentication = authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(authRequest.getId(),
