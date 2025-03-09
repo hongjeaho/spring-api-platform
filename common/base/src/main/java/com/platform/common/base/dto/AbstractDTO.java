@@ -1,4 +1,4 @@
-package com.platform.common.web.dto;
+package com.platform.common.base.dto;
 
 import com.google.gson.Gson;
 import lombok.Getter;
