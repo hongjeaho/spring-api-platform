@@ -1,6 +1,6 @@
 package com.platform.common.web.aspect;
 
-import com.platform.common.web.dto.AbstractDTO;
+import com.platform.common.base.dto.AbstractDTO;
 import com.platform.common.web.annotation.ApplyMasking;
 import com.platform.common.web.annotation.MaskingPattern;
 import lombok.extern.slf4j.Slf4j;

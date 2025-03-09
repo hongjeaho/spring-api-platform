@@ -1,7 +1,7 @@
 package com.platform.common.web.config.resolver;
 
 import com.platform.common.web.annotation.Auditing;
-import com.platform.common.web.dto.AbstractDTO;
+import com.platform.common.base.dto.AbstractDTO;
 import com.platform.datasource.base.auth.AuthUser;
 import org.springframework.core.MethodParameter;
 import org.springframework.http.converter.HttpMessageConverter;

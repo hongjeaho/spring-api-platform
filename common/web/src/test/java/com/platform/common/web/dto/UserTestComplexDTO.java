@@ -1,6 +1,7 @@
 package com.platform.common.web.dto;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.platform.common.base.dto.AbstractDTO;
 import lombok.*;
 
 @Getter
